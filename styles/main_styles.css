@@ -294,10 +294,11 @@ section
 	background: rgba(255, 255, 255, .01);
 	z-index: 12;
 }
-.header.scrolled
+/*.header.scrolled
 {
 	background: rgba(255, 255, 255, .01);
 }
+*/
 
 /*********************************
 3.1 Top Bar
@@ -314,12 +315,13 @@ section
 	-o-transition: all 400ms ease;
 	transition: all 400ms ease;
 }
-.header.scrolled .top_bar
+/*.header.scrolled .top_bar
 {
 	visibility: hidden;
 	opacity: 0;
 	height: 0px;
 }
+*/
 .user_box_link
 {
 	display: inline-block;
@@ -361,10 +363,10 @@ section
 	-o-transition: all 400ms ease;
 	transition: all 400ms ease;
 }
-.header.scrolled .main_nav_col
+/*.header.scrolled .main_nav_col
 {
 	height: 100px;
-}
+}*/
 
 /*********************************
 3.2 Logo
@@ -378,14 +380,14 @@ section
 	-o-transform: translateY(-6px);
 	transform: translateY(-6px);
 }
-.header.scrolled .logo_container
+/*.header.scrolled .logo_container
 {
 	-webkit-transform: none;
 	-moz-transform: none;
 	-ms-transform: none;
 	-o-transform: none;
 	transform: none;
-}
+}*/
 .logo a
 {
 	font-family: 'OCR A Std', monospace, sans-serif;
@@ -453,7 +455,7 @@ section
 	transform: translateY(-1px);
 	cursor: pointer;
 }
-.header.scrolled .content_search
+/*.header.scrolled .content_search
 {
 	-webkit-transform: none;
 	-moz-transform: none;
@@ -461,6 +463,7 @@ section
 	-o-transform: none;
 	transform: none;
 }
+*/
 .mag_glass
 {
 	-webkit-transition: all 200ms ease;
