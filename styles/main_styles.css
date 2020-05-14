@@ -156,7 +156,7 @@ h6::selection
 }
 .form-control
 {
-	color: #db5246;
+	color: #C0C0C0;
 }
 section
 {
@@ -244,9 +244,13 @@ section
 }
 .button
 {
+	position: absolute;
 	display: inline-block;
-	height: 53px;
-	border-radius: 27px;
+	top: 220px;
+	right: -40px;
+	height: 39px;
+	width: 40px;
+	border-radius: 2px;
 	overflow: hidden;
 }
 .button_bcg
@@ -268,53 +272,18 @@ section
 {
 	left: -100%;
 }
-.button a
+.button a i
 {
 	display: block;
-	font-size: 13px;
-	font-weight: 700;
-	color: #fff;
-	text-transform: uppercase;
-	line-height: 53px;
-	padding-left: 46px;
-	padding-right: 46px;
-	white-space: nowrap;
-	z-index: 2;
-}
-.button span
-{
-	display: inline-block;
 	vertical-align: middle;
-	width: 5.75px;
-	height: 5.63px;
-	background: #FFFFFF;
-	border-radius: 50%;
-	margin-right: 2px;
-}
-.button span:first-child
-{
-	margin-left: 10px;
-}
-.button span:nth-child(2)
-{
-	opacity: 0.6;
-}
-.button span:last-child
-{
-	opacity: 0.4;
-	margin-right: 0px;
-}
-.button_img
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 5.75px;
-	height: 5.63px;;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	opacity:1.0;
+	font-size:24px;
+	font-weight: 600;
+	color: #FFFFFF;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(33%);
 }
 
 /*********************************
