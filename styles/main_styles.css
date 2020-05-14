@@ -250,7 +250,7 @@ section
 	right: -40px;
 	height: 39px;
 	width: 40px;
-	border-radius: 2px;
+	border-radius: 0px;
 	overflow: hidden;
 }
 .button_bcg
