@@ -304,6 +304,18 @@ section
 	opacity: 0.4;
 	margin-right: 0px;
 }
+.button_img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5.75px;
+	height: 5.63px;;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	opacity:1.0;
+}
 
 /*********************************
 3. Header
@@ -615,8 +627,9 @@ section
 }
 .home_slider_button
 {
-	margin-top: 70px;
+	margin-top: 60px;
 }
+
 .flipInX
 {
 	animation-delay: 600ms;
