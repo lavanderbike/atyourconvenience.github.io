@@ -1,15 +1,21 @@
 /* JS Document */
-var searchInput = 'search_input';
 
-$(document).ready(function () {
-    var autocomplete;
-    autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
-        types: ['geocode'],
-    });
+function activatePlacesSearch() {
+    var input = document.getElementById('search_input');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+}
+
+// var searchInput = 'search_input';
+
+// $(document).ready(function () {
+//     var autocomplete;
+//     autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+//         types: ['geocode'],
+//     });
 	
-    google.maps.event.addListener(autocomplete, 'place_changed', function () {
-        var near_place = autocomplete.getPlace();
-        document.getElementById('loc_lat').value = near_place.geometry.location.lat();
-        document.getElementById('loc_long').value = near_place.geometry.location.lng();
-    });
-});
+//     google.maps.event.addListener(autocomplete, 'place_changed', function () {
+//         var near_place = autocomplete.getPlace();
+//         document.getElementById('loc_lat').value = near_place.geometry.location.lat();
+//         document.getElementById('loc_long').value = near_place.geometry.location.lng();
+//     });
+// });
