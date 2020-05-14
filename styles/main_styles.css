@@ -133,7 +133,11 @@ p::selection
 {
 	
 }
-h1{font-size: 48px;}
+h1
+{
+	font-size: 48px;
+	text-align:center;
+}
 h2{font-size: 36px;}
 h3{font-size: 24px;}
 h4{font-size: 18px;}
@@ -157,6 +161,7 @@ h6::selection
 .form-control
 {
 	color: #C0C0C0;
+	border-radius: 0px;
 }
 section
 {
@@ -246,10 +251,6 @@ section
 {
 	position: absolute;
 	display: inline-block;
-	top: 220px;
-	right: -40px;
-	height: 39px;
-	width: 40px;
 	border-radius: 0px;
 	overflow: hidden;
 }
@@ -274,17 +275,13 @@ section
 }
 .button a i
 {
-	display: block;
-	vertical-align: middle;
 	font-size:24px;
 	font-weight: 600;
 	color: #FFFFFF;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(33%);
+	text-align:center;
+	padding:0.5em 0.5em;
 }
+
 
 /*********************************
 3. Header
