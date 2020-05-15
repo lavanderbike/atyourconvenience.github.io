@@ -249,41 +249,32 @@ section
 {
 	padding: 0px !important;
 }
-.button
-{
-	position: absolute;
-	display: inline-block;
-	border-radius: 0px;
-	overflow: hidden;
-}
+
 .button_bcg
 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 200%;
+	width: 50px;
 	height: 100%;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
-	z-index: -1;
-	-webkit-transition: all 400ms ease;
-	-moz-transition: all 400ms ease;
-	-ms-transition: all 400ms ease;
-	-o-transition: all 400ms ease;
-	transition: all 400ms ease;
-}
-.button:hover .button_bcg
-{
-	left: -100%;
-}
-.button a i
-{
+	background: linear-gradient(to right, #fa9e1b,  #fa9e1b, #8d4fff);
+
+	display: inline-block;
+	border-radius: 0px;
+	overflow: hidden;
+
 	font-size:24px;
 	font-weight: 600;
 	color: #FFFFFF;
 	text-align:center;
-	padding:0.5em 0.5em;
+	border: none;
 }
 
+
+.button_bcg:hover
+{
+	background: linear-gradient(to right, #8d4fff, #fa9e1b, #fa9e1b);
+}
 
 /*********************************
 3. Header
