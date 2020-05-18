@@ -1,0 +1,28 @@
+@import 'variables';
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.navbar-links {
+  list-style: none;
+}
+
+.navbar-links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.navbar-links li a {
+  transition: all 0.3s, ease 0s;
+  font-size: 12px;
+  border-radius: 20px;
+}

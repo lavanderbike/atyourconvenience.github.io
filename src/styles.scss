@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $tertiary-color;
+  height: 100vh;
+  background: linear-gradient(110deg, $primary-color 50%, $secondary-color 50%);
+}
+
+li, a, button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: $tertiary-color;
+  text-decoration: none; 
+}
+
+.container {
+  margin: 1rem 5rem;
+}
+
+.btn {
+  border: 1px solid $primary-color;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s, ease-in-out 1s;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-primary {
+  color: $primary-color;
+  border-color: $tertiary-color;
+  background-color: $tertiary-color;
+}
+
+.btn-secondary {
+  color: $tertiary-color;
+  background-color: $secondary-color;
+  border-color: $tertiary-color;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(110deg, $tertiary-color 50%, #2F445E 50%);
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background: linear-gradient(110deg, $secondary-color 50%, #86A1A3 50%);
+}
