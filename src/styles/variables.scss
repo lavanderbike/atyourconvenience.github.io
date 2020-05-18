@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
-// Global variables
-$primary-color: #D4D5D5;
-$secondary-color: #4C9DA3;
-$tertiary-color: #18375F;
+/* Colour variables */
+$primary-color: #ecf0f1;
+$secondary-color: #18375F;
+$tertiary-color: #4C9DA3;
 $quaternary-color: #E96729;
 
-$off-white: #ecf0f1;
+/* Spacing variables */
+$spacing-sm: 1rem;
+$spacing-md: 3rem;
+$spacing-lg: 10rem;
+/* Screen sizes */

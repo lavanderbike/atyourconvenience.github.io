@@ -5,7 +5,7 @@ import { HomeComponent } from './views/home/home.component';
 
 const routes: Routes = [
   { path: Constants.ROUTES.HOME, component: HomeComponent },
-  { path: '', redirectTo: Constants.ROUTES.HOME, pathMatch: 'full' },
+  { path: '', component: HomeComponent  , pathMatch: 'full' },
 ];
 
 @NgModule({
