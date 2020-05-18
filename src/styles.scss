@@ -10,7 +10,8 @@
 body {
   color: $tertiary-color;
   height: 100vh;
-  background: linear-gradient(110deg, $primary-color 50%, $secondary-color 50%);
+  background: linear-gradient(90deg, $primary-color 50%, $secondary-color 50%);
+  z-index:-10000;
 }
 
 li,
@@ -21,7 +22,7 @@ input {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: $secondary-color;
+  color: $tertiary-color;
   text-decoration: none;
 }
 
@@ -41,31 +42,32 @@ input {
 }
 
 .btn-primary {
-  color: $primary-color;
-  border-color: $primary-color;
+  color: $tertiary-color;
   background-color: $secondary-color;
+  border-color: $tertiary-color;
 }
 
 .btn-secondary {
-  color: $secondary-color;
-  background-color: $primary-color;
-  border-color: $secondary-color;
+  color: $primary-color;
+  background-color: $tertiary-color;
+  border-color: $tertiary-color;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: linear-gradient(110deg, $secondary-color 50%, #2f445e 50%);
+  background: linear-gradient(110deg, $secondary-color 50%, $primary-color 50%);
   border-color: $quaternary-color;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background: linear-gradient(110deg, $primary-color 50%, #f2eeed 50%);
+  color: $quaternary-color;
   border-color: $quaternary-color;
 }
 
 h1 {
-  color: $secondary-color;
+  color: $tertiary-color;
+  font-family: "Montserrat", sans-serif;
 }
 
 input {
