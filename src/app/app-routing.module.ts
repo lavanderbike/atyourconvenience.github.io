@@ -6,12 +6,12 @@ import { StoresComponent } from './views/stores/stores.component';
 
 const routes: Routes = [
   { path: Constants.ROUTES.HOME, component: HomeComponent },
-  { path: Constants.ROUTES.STORES,component:StoresComponent},
-  { path: '',component: HomeComponent,pathMatch: 'full' },
+  { path: Constants.ROUTES.STORES, component: StoresComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
