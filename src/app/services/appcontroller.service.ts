@@ -16,7 +16,5 @@ export class AppControllerService {
 
   public setAddress(newAddress: string) {
     this.address = newAddress;
-
-    this.router.navigate(["/" + Constants.ROUTES.STORES]);
   }
 }

@@ -15,7 +15,7 @@
           name="address"
           id="address"
         />
-        <a href="javascript:;" class="btn btn-primary" (click)="searchAddress()"
+        <a [routerLink]="['/stores']" routerLinkActive="router-link-active"  class="btn btn-primary" (click)="searchAddress()"
           ><img
             src="../../../assets/images/arrow-right.svg"
             height="14px"
