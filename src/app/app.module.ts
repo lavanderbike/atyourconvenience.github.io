@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,16 +18,17 @@ import { MapsComponent } from './views/maps/maps.component';
     HeaderComponent,
     FooterComponent,
     StoresComponent,
-    MapsComponent
+    MapsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCyF_upzsmz0ZkNhbz0fzOZXPsuau0YZv4'
-    })
+      apiKey: 'AIzaSyCyF_upzsmz0ZkNhbz0fzOZXPsuau0YZv4',
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

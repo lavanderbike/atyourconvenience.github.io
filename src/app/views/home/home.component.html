@@ -10,13 +10,18 @@
 
       <div class="address-search">
         <input
+          [(ngModel)]="address"
           type="text"
           name="address"
-          class="form-control" 
+          class="form-control"
           id="search_input"
           placeholder="Toronto, Canada"
         />
-        <a href="" class="btn btn-primary"
+        <a
+          [routerLink]="['/stores']"
+          routerLinkActive="router-link-active"
+          class="btn btn-primary"
+          (click)="searchAddress()"
           ><img
             src="../../../assets/images/arrow-right.svg"
             height="14px"
