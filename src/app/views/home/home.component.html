@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="left-side">
+    <div class="container">
+      <h1>
+        AT YOUR <br />
+        <span>CONVENIENCE</span>
+      </h1>
+
+      <p>Groceries and more available for pickup.</p>
+
+      <div class="address-search">
+        <input
+          [(ngModel)]="address"
+          type="text"
+          name="address"
+          id="address"
+        />
+        <a [routerLink]="['/stores']" routerLinkActive="router-link-active"  class="btn btn-primary" (click)="searchAddress()"
+          ><img
+            src="../../../assets/images/arrow-right.svg"
+            height="14px"
+            width="14px"
+            alt=""
+        /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-side">
+    <div class="header">
+      <img src="../../../assets/images/shopping-basket-solid.svg" alt="" />
+    </div>
+  </div>
+
+  <span class="clear-fix"></span>
+</div>

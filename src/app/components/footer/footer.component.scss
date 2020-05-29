@@ -1,0 +1,9 @@
+@import 'variables';
+
+.footer {
+  position: absolute;
+  bottom: -20vh;
+  width: 100%;
+  height: 20vh;
+  background-color: $quaternary-color;
+}
