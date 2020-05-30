@@ -1,12 +1,21 @@
-
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { Constants } from './services/constants';
 
-const routes: Routes = [];
+import { HomeComponent } from './views/home/home.component';
+import { MapsComponent } from './views/maps/maps.component';
+import { StoresComponent } from './views/stores/stores.component';
+
+const routes: Routes = [
+  { path: Constants.ROUTES.HOME, component: HomeComponent },
+  { path: Constants.ROUTES.STORES, component: StoresComponent },
+  { path: Constants.ROUTES.MAPS, component: MapsComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
