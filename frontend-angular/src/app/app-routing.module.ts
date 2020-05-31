@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { Constants } from './services/constants';
-
 import { HomeComponent } from './views/home/home.component';
-import { MapsComponent } from './views/maps/maps.component';
 import { StoresComponent } from './views/stores/stores.component';
+import { MapsComponent } from './views/maps/maps.component';
 
 const routes: Routes = [
   { path: Constants.ROUTES.HOME, component: HomeComponent },

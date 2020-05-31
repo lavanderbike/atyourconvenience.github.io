@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppControllerService } from './services/controller';
+import { AppControllerService } from './services/appcontroller.service';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +11,11 @@ export class AppComponent implements OnInit {
 /**
  *
  */
-constructor(public controllerService: AppControllerService) {
+constructor(public appController: AppControllerService) {
   
 }
 
-  ngOnInit() {}
+  ngOnInit(): void {
+    console.log("App started");
+  }
 }

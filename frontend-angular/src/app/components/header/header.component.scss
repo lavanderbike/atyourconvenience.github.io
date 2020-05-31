@@ -1,18 +1,28 @@
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+@import "variables";
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 10%;
 }
 
-.example-button-row {
-  display: table-cell;
+.logo {
+  cursor: pointer;
+  margin-right: auto;
 }
 
-.example-button-row button {
-  display: table-cell;
-  margin-right: 8px;
+.navbar-links {
+  list-style: none;
 }
 
-.toolbar-spacer {
-  flex: 1 1 auto;
+.navbar-links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.navbar-links li a {
+  transition: all 0.3s, ease 0s;
+  font-size: 12px;
+  border-radius: 20px;
 }

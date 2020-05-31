@@ -3,6 +3,6 @@ export class Constants {
     HOME: 'home',
     STORES: 'stores',
     MAPS: 'maps',
-    CONTACT_US: 'contact-us',
+    CONTACTUS: 'contact-us',
   };
 }

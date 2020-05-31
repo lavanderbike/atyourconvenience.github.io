@@ -1,35 +1,36 @@
-<div class="home-container">
-  <div class="container">
-    <form class="form">
-      <mat-form-field class="input-width">
-        <mat-label>Address</mat-label>
+<div class="row">
+  <div class="left-side">
+    <div class="container">
+      <h1>
+        AT YOUR <br />
+        <span>CONVENIENCE</span>
+      </h1>
+
+      <p>Groceries and more available for pickup.</p>
+
+      <div class="address-search">
         <input
-          matInput
-          type="text"
-          id="address"
-          name="address"
           [(ngModel)]="address"
+          type="text"
+          name="address"
+          id="address"
         />
-        <button
-          mat-button
-          *ngIf="address"
-          matSuffix
-          mat-icon-button
-          aria-label="Clear"
-          (click)="address = ''"
-        >
-          <mat-icon>close</mat-icon>
-        </button>
-      </mat-form-field>
-      <button
-        mat-button
-        matSuffix
-        aria-label="search"
-        routerLink="/stores"
-        (click)="setAddress()"
-      >
-        <mat-icon>keyboard_arrow_right</mat-icon>
-      </button>
-    </form>
+        <a [routerLink]="['/stores']" routerLinkActive="router-link-active"  class="btn btn-primary" (click)="searchAddress()"
+          ><img
+            src="../../../assets/images/arrow-right.svg"
+            height="14px"
+            width="14px"
+            alt=""
+        /></a>
+      </div>
+    </div>
   </div>
+
+  <div class="right-side">
+    <div class="header">
+      <img src="../../../assets/images/shopping-basket-solid.svg" alt="" />
+    </div>
+  </div>
+
+  <span class="clear-fix"></span>
 </div>

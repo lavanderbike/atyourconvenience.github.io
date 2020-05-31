@@ -6,13 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maps.component.scss'],
 })
 export class MapsComponent implements OnInit {
-  public latitude: number;
-  public longitude: number;
-
   constructor() {}
 
-  ngOnInit(): void {
-    this.latitude = 43.6532;
-    this.longitude = -79.3832;
-  }
+  ngOnInit(): void {}
+
+  currentLatitude = 43.6532;
+  currentLongitude = -79.3832;
 }

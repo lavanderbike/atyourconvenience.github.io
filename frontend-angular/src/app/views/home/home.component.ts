@@ -1,11 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { AppControllerService } from 'src/app/services/controller';
-import {
-  Location,
-  Appearance,
-  GermanAddress,
-} from '@angular-material-extensions/google-maps-autocomplete';
-import PlaceResult = google.maps.places.PlaceResult;
+import { Component, OnInit } from '@angular/core';
+import { AppControllerService } from 'src/app/services/appcontroller.service';
 
 @Component({
   selector: 'app-home',
@@ -14,19 +8,14 @@ import PlaceResult = google.maps.places.PlaceResult;
 })
 export class HomeComponent implements OnInit {
   public address: string;
-  public appearance = Appearance;
-  public zoom: number;
-  public latitude: number;
-  public longitude: number;
-  public selectedAddress: PlaceResult;
 
-  constructor(private controller: AppControllerService) {}
+  constructor(public appController: AppControllerService) {}
 
   ngOnInit(): void {
-    this.address = this.controller.address;
+    this.address = 'Toronto, Canada';
   }
 
-  setAddress() {
-    this.controller.setAddress(this.address);
+  public searchAddress() {
+    this.appController.setAddress(this.address);
   }
 }

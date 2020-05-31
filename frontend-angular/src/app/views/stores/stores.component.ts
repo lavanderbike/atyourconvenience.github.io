@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppControllerService } from 'src/app/services/controller';
+import { AppControllerService } from 'src/app/services/appcontroller.service';
 
 @Component({
   selector: 'app-stores',
@@ -7,11 +7,10 @@ import { AppControllerService } from 'src/app/services/controller';
   styleUrls: ['./stores.component.scss'],
 })
 export class StoresComponent implements OnInit {
+  constructor(public appController: AppControllerService) {}
   public address: string;
 
-  constructor(private controller: AppControllerService) {}
-
   ngOnInit(): void {
-    this.address = this.controller.address;
+    this.address = this.appController.address;
   }
 }
