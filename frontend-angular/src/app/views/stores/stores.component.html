@@ -1,6 +1,8 @@
 <div class="row">
   <div class="left-side">
     <div class="container">
+      <h1>{{ map.userLocation.address }}</h1>
+
       <div class="card" *ngFor="let point of map.storePoints">
         <span class="title">
           {{ point.address }}

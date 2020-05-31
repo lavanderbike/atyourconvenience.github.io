@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { IMap, ILocation } from '../services/ilocation';
-import { JsonPipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root',
@@ -18,24 +17,24 @@ export class AppControllerService {
       country: 'Canada',
     };
 
-    this.userLocation = defaultLocation;
-    this.map = this.getMapWithStorePoints(this.userLocation);
-
-    console.log(JSON.stringify(this.map.userLocation));
+    this.setUserLocation(defaultLocation);
   }
 
   public getuserLocation(): ILocation {
     return this.userLocation;
   }
 
-  public updateuserLocation(location: ILocation) {
+  public setUserLocation(location: ILocation) {
     // Validate location
 
     // Set current location
-    this.userLocation = { ...location, ...this.userLocation };
+    this.userLocation = location;
+    this.map = this.getMapWithStorePoints(this.userLocation);
   }
 
   public getMapWithStorePoints(location: ILocation): IMap {
+    // Call backend service to get list of stores near this locatoin
+
     let storePoints: ILocation[] = [
       {
         latitude: 43.639322,
