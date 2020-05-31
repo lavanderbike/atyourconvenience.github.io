@@ -1,9 +1,20 @@
 <div class="row">
   <div class="left-side">
-    <div class="container"></div>
+    <div class="container">
+      <div class="card" *ngFor="let point of map.storePoints">
+        <span class="title">
+          {{ point.address }}
+        </span>
+        <div class="card-content">
+          <span>Latitude: {{ point.latitude }}</span>
+          <br />
+          <span>Longitude: {{ point.longitude }} </span>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="right-side">
-    <maps></maps>
+    <maps [map]="map"></maps>
   </div>
 </div>

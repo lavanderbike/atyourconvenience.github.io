@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppControllerService } from 'src/app/services/appcontroller.service';
+import { IMap } from 'src/app/services/ilocation';
 
 @Component({
   selector: 'app-stores',
@@ -7,10 +8,11 @@ import { AppControllerService } from 'src/app/services/appcontroller.service';
   styleUrls: ['./stores.component.scss'],
 })
 export class StoresComponent implements OnInit {
+  public map: IMap;
+
   constructor(public appController: AppControllerService) {}
-  public address: string;
 
   ngOnInit(): void {
-    this.address = this.appController.address;
+    this.map = this.appController.map;
   }
 }

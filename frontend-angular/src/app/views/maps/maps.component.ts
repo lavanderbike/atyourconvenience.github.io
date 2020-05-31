@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IMap } from 'src/app/services/ilocation';
 
 @Component({
   selector: 'maps',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maps.component.scss'],
 })
 export class MapsComponent implements OnInit {
+  @Input() map: IMap;
+
   constructor() {}
 
   ngOnInit(): void {}
-
-  currentLatitude = 43.6532;
-  currentLongitude = -79.3832;
 }

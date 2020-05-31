@@ -9,13 +9,12 @@
       <p>Groceries and more available for pickup.</p>
 
       <div class="address-search">
-        <input
-          [(ngModel)]="address"
-          type="text"
-          name="address"
-          id="address"
-        />
-        <a [routerLink]="['/stores']" routerLinkActive="router-link-active"  class="btn btn-primary" (click)="searchAddress()"
+        <input [(ngModel)]="address" type="text" name="address" id="address" />
+        <a
+          [routerLink]="['/stores']"
+          routerLinkActive="router-link-active"
+          class="btn btn-primary"
+          (click)="searchAddress()"
           ><img
             src="../../../assets/images/arrow-right.svg"
             height="14px"

@@ -1,10 +1,11 @@
 <agm-map
   class="map"
-  [latitude]="currentLatitude"
-  [longitude]="currentLongitude"
+  [latitude]="map.userLocation.latitude"
+  [longitude]="map.userLocation.longitude"
 >
   <agm-marker
-    [latitude]="currentLatitude"
-    [longitude]="currentLongitude"
+    *ngFor="let point of map.storePoints"
+    [latitude]="point.latitude"
+    [longitude]="point.longitude"
   ></agm-marker>
 </agm-map>
